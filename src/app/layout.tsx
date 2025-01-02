@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Source_Code_Pro } from 'next/font/google'
 import localFont from 'next/font/local'
 
+import { ThemeProvider } from '@/provider/theme-provider'
+
 import './globals.css'
 
 const geistSans = localFont({
@@ -36,7 +38,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${sourceCodePro.className} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

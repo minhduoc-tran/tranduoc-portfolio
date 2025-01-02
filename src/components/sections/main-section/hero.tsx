@@ -3,7 +3,8 @@ import React from 'react'
 
 import { CodeIcon, PenToolIcon } from 'lucide-react'
 
-import Wrapper from '@/components/common/wapper'
+import Wrapper from '@/components/common/wrapper'
+import { CardContainer } from '@/components/ui/3d-card'
 import { Button } from '@/components/ui/button'
 import { TypewriterEffect } from '@/components/ui/typewriter-effect'
 
@@ -64,16 +65,18 @@ const AsideLeft = () => {
 }
 const AsideRight = () => {
   return (
-    <div className="relative overflow-hidden rounded-2xl border-4 border-slate-900">
-      <Image
-        src={'/images/DHF_1747.jpg'}
-        alt="Tran Duoc"
-        className="bg-cover bg-center object-cover"
-        loading="lazy"
-        width={300}
-        height={200}
-      />
-    </div>
+    <CardContainer className="inter-var group/card">
+      <div className="relative overflow-hidden rounded-[255px_15px_225px_15px/15px_225px_15px] border-4 border-slate-900">
+        <Image
+          src={'/images/DHF_1747.jpg'}
+          alt="Tran Duoc"
+          className="bg-cover bg-center object-cover"
+          loading="lazy"
+          width={300}
+          height={200}
+        />
+      </div>
+    </CardContainer>
   )
 }
 

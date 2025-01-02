@@ -5,12 +5,12 @@ import React from 'react'
 
 import { motion } from 'framer-motion'
 
-import Wrapper from '@/components/common/wapper'
+import Wrapper from '@/components/common/wrapper'
 import { techList } from '@/constants/tech-list'
 
 const SkillsSection = () => {
   return (
-    <Wrapper style="min-h-[70vh] border-2 rounded-xl p-2 md:p-4 lg:p-8">
+    <Wrapper style="min-h-[70vh]  border-8 border-slate-500 border-double rounded-[255px_15px_225px_15px/15px_225px_15px]  p-2 md:p-4 lg:p-8">
       <h2 className="text-center text-3xl font-semibold md:text-4xl lg:text-5xl">
         Skills
       </h2>

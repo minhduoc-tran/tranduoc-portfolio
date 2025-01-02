@@ -2,11 +2,13 @@
 
 import React from 'react'
 
+import { type ClassValue } from 'clsx'
+
 import { cn } from '@/lib/utils'
 
 interface WrapperProps {
   children: React.ReactNode
-  style?: string | undefined
+  style?: ClassValue | undefined
 }
 
 const Wrapper = ({ children, style }: WrapperProps) => {

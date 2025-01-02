@@ -3,7 +3,7 @@ import React from 'react'
 const Logo = () => {
   return (
     <>
-      <h2 className="font-source_code_pro hidden text-base font-extrabold text-[#012a4a] md:block">
+      <h2 className="hidden font-source_code_pro text-base font-extrabold text-[#012a4a] md:block">
         Tran-Duoc
       </h2>
 

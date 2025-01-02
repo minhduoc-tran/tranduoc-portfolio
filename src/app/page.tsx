@@ -15,6 +15,8 @@ const MoreInfo = dynamic(
   () => import('@/components/sections/main-section/more-info')
 )
 
+const Footer = dynamic(() => import('@/components/common/footer'))
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -23,6 +25,7 @@ export default function Home() {
       <SkillsSection />
       <WorkExperience />
       <MoreInfo />
+      <Footer />
     </div>
   )
 }

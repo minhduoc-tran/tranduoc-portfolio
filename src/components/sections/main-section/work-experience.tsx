@@ -2,7 +2,7 @@ import React from 'react'
 
 import { CircleDot } from 'lucide-react'
 
-import Wrapper from '@/components/common/wapper'
+import Wrapper from '@/components/common/wrapper'
 import {
   Accordion,
   AccordionContent,
@@ -24,7 +24,7 @@ const WorkExperience = () => {
               <Accordion
                 type="single"
                 collapsible
-                className="w-full"
+                className="w-full border-b-2 border-b-slate-500"
                 key={job.startDate}
               >
                 <AccordionItem value={`item-${index}`}>
