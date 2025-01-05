@@ -26,6 +26,18 @@ const sourceCodePro = Source_Code_Pro({
 export const metadata: Metadata = {
   title: 'Tran Duoc',
   description: 'Personal portfolio create by Tran Duoc',
+  openGraph: {
+    title: 'Trần Được',
+    description: 'I am a Software Engineer',
+    siteName: 'Tran Duoc',
+    type: 'website',
+    images: [
+      {
+        url: '/images/DHF_1747.jpg',
+        secureUrl: '/images/DHF_1747.jpg',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
