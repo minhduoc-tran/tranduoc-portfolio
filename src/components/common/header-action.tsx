@@ -5,7 +5,7 @@ import SocialMedia from './social-media'
 
 const HeaderAction = () => {
   return (
-    <div className="flex items-center gap-4">
+    <div className="hidden items-center gap-4 md:flex">
       <SocialMedia />
       <ModeToggle />
     </div>

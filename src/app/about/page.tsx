@@ -1,7 +1,11 @@
+import dynamic from 'next/dynamic'
 import React from 'react'
 
 import Education from '@/components/sections/about-section/education'
-import MemorableMilestone from '@/components/sections/about-section/memorable-milestone'
+
+const MemorableMilestone = dynamic(
+  () => import('@/components/sections/about-section/memorable-milestone')
+)
 
 const AboutPage = () => {
   return (

@@ -42,7 +42,7 @@ const CardHoverEffect = () => {
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.09 * idx }}
-              className="relative z-20 flex h-full max-h-[20vh] w-full flex-col gap-2 rounded-[255px_15px_225px_15px/15px_225px_15px] border-4 border-black bg-white p-4"
+              className="relative z-20 flex h-full max-h-[20vh] w-full flex-col gap-2 rounded-[255px_15px_225px_15px/15px_225px_15px] border-4 border-black bg-white p-4 dark:text-black"
             >
               <Link
                 href={item.link}

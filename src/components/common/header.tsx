@@ -1,5 +1,6 @@
 import React from 'react'
 
+import ToggleNav from '../ui/toggle-nav'
 import HeaderAction from './header-action'
 import Logo from './logo'
 import Navbar from './nav-bar'
@@ -10,6 +11,7 @@ const Header = () => {
       <Logo />
       <Navbar />
       <HeaderAction />
+      <ToggleNav />
     </div>
   )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 import { Facebook, Github, Linkedin } from 'lucide-react'
 
-const socialMediaList = [
+export const socialMediaList = [
   {
     name: 'Github',
     link: 'https://github.com/minhduoc-tran',
@@ -36,7 +36,7 @@ const SocialMedia = () => {
             {item.icon}
           </Link>
         )
-      })}{' '}
+      })}
     </div>
   )
 }

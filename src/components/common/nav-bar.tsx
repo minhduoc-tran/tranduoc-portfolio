@@ -9,10 +9,9 @@ import { cn } from '@/lib/utils'
 
 const Navbar = () => {
   const pathName = usePathname()
-  console.log(pathName)
 
   return (
-    <nav className="flex items-center justify-center gap-4 rounded-full border-2 p-2">
+    <nav className="hidden items-center justify-center gap-4 rounded-full border-2 p-2 md:flex">
       {navList.map((item, index) => {
         return (
           <Link
