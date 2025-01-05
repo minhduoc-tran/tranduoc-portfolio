@@ -10,7 +10,7 @@ const configProject = configSchema.safeParse({
 })
 if (!configProject.success) {
   console.error(configProject.error.issues)
-  throw new Error('Các giá trị khai báo trong file .env không hợp lệ')
+  throw new Error(`error => ${JSON.stringify(configProject.error)}`)
 }
 
 const envConfig = configProject.data
