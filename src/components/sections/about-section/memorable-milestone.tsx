@@ -11,7 +11,7 @@ const GotAJobList = dynamic(() => import('@/components/ui/got-a-job-list'))
 
 const GraduateOnTime = () => {
   return (
-    <div className="flex w-full flex-col items-center justify-center">
+    <div className="flex w-full flex-col items-center justify-center overflow-hidden">
       <ArrowBigDown className="h-32 w-32 text-[#0077b6]" />
       <div className="flex w-full flex-col items-center rounded-[255px_15px_225px_15px/15px_225px_15px] border-4 border-black dark:border-white">
         <h3 className="py-2 text-2xl font-semibold">Graduate on time</h3>

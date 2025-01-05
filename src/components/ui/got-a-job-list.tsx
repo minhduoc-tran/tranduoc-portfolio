@@ -8,7 +8,7 @@ import { gotAJobStory } from '@/constants/got-a-job-story'
 
 const GotAJobList = () => {
   return (
-    <div className="mt-6 grid min-h-[320px] w-full grid-cols-1 gap-4 px-2 md:max-w-3xl md:grid-cols-2 md:px-4">
+    <div className="mt-6 grid min-h-[320px] w-full grid-cols-1 gap-4 overflow-hidden px-2 md:max-w-3xl md:grid-cols-2 md:px-4">
       {gotAJobStory.map((item, index) => {
         return (
           <motion.div
