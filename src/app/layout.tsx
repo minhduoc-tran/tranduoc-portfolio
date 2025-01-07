@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Source_Code_Pro } from 'next/font/google'
 import localFont from 'next/font/local'
 
+import CanvasCursor from '@/components/common/canvas-cursor'
 import { ThemeProvider } from '@/provider/theme-provider'
 
 import './globals.css'
@@ -56,6 +57,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <CanvasCursor />
           {children}
         </ThemeProvider>
       </body>
