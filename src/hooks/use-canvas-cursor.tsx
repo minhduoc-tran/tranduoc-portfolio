@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+/* eslint-disable no-var */
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 import { useEffect } from 'react'
@@ -41,7 +43,7 @@ const useCanvasCursor = () => {
       }
     },
     update: function () {
-      var e = this.spring,
+      let e = this.spring,
         t = this.nodes[0]
       t.vx += (pos.x - t.x) * e
       t.vy += (pos.y - t.y) * e
@@ -60,7 +62,7 @@ const useCanvasCursor = () => {
           (e *= E.tension)
     },
     draw: function () {
-      var e,
+      let e,
         t,
         n = this.nodes[0].x,
         i = this.nodes[0].y
@@ -84,7 +86,7 @@ const useCanvasCursor = () => {
   function onMousemove(e) {
     function o() {
       lines = []
-      for (var e = 0; e < E.trails; e++)
+      for (let e = 0; e < E.trails; e++)
         lines.push(new Line({ spring: 0.4 + (e / E.trails) * 0.025 }))
     }
     function c(e) {
@@ -112,7 +114,7 @@ const useCanvasCursor = () => {
       ctx.globalCompositeOperation = 'source-over'
       ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
       ctx.globalCompositeOperation = 'lighter'
-      ctx.strokeStyle = 'hsla(' + Math.round(f.update()) + ',50%,50%,0.2)'
+      ctx.strokeStyle = `hsla(${Math.round(f.update())},50%,50%,0.2)`
       ctx.lineWidth = 1
       for (var e, t = 0; t < E.trails; t++) {
         ;(e = lines[t]).update()
@@ -193,6 +195,7 @@ const useCanvasCursor = () => {
         ctx.running = true
       })
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 }
 
